@@ -9,12 +9,17 @@ const Cart = () => {
     fetch('data.json')
     .then(response => response.json())
     .then(data => setProducts(data))
-  },[])
+  },[]);
+
+  const handleAddToCard = () =>{
+    console.log('iam okay')
+  }
+
   return (
     <div className='shop-container'>
       <div className="products-container">
         {
-          products.map(product => <Product key={product.id} product={product}></Product> )
+          products.map(product => <Product handleAddToCard={handleAddToCard} key={product.id} product={product}></Product> )
         }
       </div>
       <div className="cart-container">
