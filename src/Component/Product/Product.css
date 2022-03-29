@@ -1,0 +1,22 @@
+.product{
+  background: rgb(150, 150, 150);
+  border-radius: 10px;
+  width: 300px;
+  height: 490px;
+  margin-bottom: 13px;
+  border: 5px solid #FF9671;
+}
+.product img{
+  width: 220px;
+  height: 220px;
+}
+.product-info{
+  padding: 15px;
+}
+.product-name{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+}

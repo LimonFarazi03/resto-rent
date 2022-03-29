@@ -1,0 +1,51 @@
+.shop-container{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  /* margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px; */
+  margin: 30px 15px;
+  
+}
+.cart-container{
+  background: #FF9671;
+  height:510px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: sticky;
+  top: 0px;
+}
+.cart-container h3{
+  text-align: center;
+}
+/* Diff */
+.shop-info{
+  margin-top: 8px;
+  background: #ffff;
+  border-radius: 5px;
+  padding: 3px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 5px;
+}
+.shop-info p{
+  margin-left: 5px;
+}
+
+/* <div className="shop-info">
+          <img src={image} alt="" />
+          <div >
+            <p>Name: Limon Farazi</p>
+            <p>Price: $155</p>
+          </div>
+        </div> */
+
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:10px;
+  margin: 0 10px;
+}
