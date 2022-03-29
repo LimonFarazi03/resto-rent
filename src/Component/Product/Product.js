@@ -1,8 +1,9 @@
 import React from 'react';
-import './Product.css'
+import './Product.css';
+import { FaShoppingCart } from 'react-icons/fa';
 
 const Product = (props) => {
-  const {strCategory,strCategoryThumb,price} = props.product
+  const {strCategory,strCategoryDescription,strCategoryThumb,price} = props.product
   return (
     <div className='product'>
 
@@ -12,7 +13,9 @@ const Product = (props) => {
         <p className='product-name'>{strCategory}</p>
         <p>Price: ${price}</p>
       </div>
-
+        <button className='order-btn'>
+          <p>Order Now</p>
+        </button>
     </div>
   );
 };
