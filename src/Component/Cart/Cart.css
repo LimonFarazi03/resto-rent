@@ -9,7 +9,7 @@
 }
 .cart-container{
   background: #FF9671;
-  height:510px;
+  height:570px;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding-left: 10px;
@@ -31,10 +31,21 @@
   justify-content: space-around;
   line-height: 5px;
 }
+.shop-info img{
+  width: 75px;
+  padding: 0px;
+}
 .shop-info p{
   margin-left: 5px;
 }
-
+.delet-btn{
+  margin-top: 20px;
+  font-size: 21px;
+  color: red;
+}
+.item-name{
+  color: green;
+}
 .products-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);

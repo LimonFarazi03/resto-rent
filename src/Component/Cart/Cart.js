@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
-import './Cart.css'
+import './Cart.css';
+import { MdDelete } from 'react-icons/md';
 
 const Cart = () => {
   const [products,setProducts] = useState([]);
@@ -13,7 +14,7 @@ const Cart = () => {
   },[]);
 
   const handleAddToCard = (product) =>{
-    console.log(product);
+    // console.log(product);
     // cart.push(product)
     // const newCart = [...cart,product];
     setCart([...cart,product])
@@ -30,15 +31,19 @@ const Cart = () => {
         <h3>This is cart container</h3>
         {
           cart.map((item)=>(
-
             <div className="shop-info">
-              <img src={cart.strCategoryThumb} alt="" />
-              <div >
-                <p>Name: </p>
-                <p>Price: $155</p>
+              <img src={item.strCategoryThumb} alt="" />
+              <div>
+                <p className='item-name'><b>{item.strCategory}</b></p>
+                <p>Price: <b>${item.price}</b></p>
+              </div>
+              <div className='delet-btn'>
+              <MdDelete></MdDelete>
+              </div>
+              <div>
+
               </div>
             </div>
-
           ))
         }
       </div>
