@@ -14,10 +14,11 @@ const Cart = () => {
   },[]);
 
   const handleAddToCard = (product) =>{
-    // console.log(product);
-    // cart.push(product)
-    // const newCart = [...cart,product];
     setCart([...cart,product])
+    if(cart.length > 4){
+      alert("You can't add more than four items")
+    }
+
   }
 
   return (
