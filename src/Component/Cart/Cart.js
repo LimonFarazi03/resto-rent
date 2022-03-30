@@ -4,7 +4,8 @@ import './Cart.css'
 
 const Cart = () => {
   const [products,setProducts] = useState([]);
-  // console.log(products);
+  const [cart,setCart] = useState([])
+  console.log(cart);
   useEffect( () =>{
     fetch('data.json')
     .then(response => response.json())
@@ -12,7 +13,10 @@ const Cart = () => {
   },[]);
 
   const handleAddToCard = (product) =>{
-    console.log(product)
+    console.log(product);
+    // cart.push(product)
+    // const newCart = [...cart,product];
+    setCart([...cart,product])
   }
 
   return (
@@ -24,7 +28,14 @@ const Cart = () => {
       </div>
       <div className="cart-container">
         <h3>This is cart container</h3>
-        
+            <div className="shop-info">
+              <img src={cart.strCategoryThumb} alt="" />
+              <div >
+                <p>Name: Limon Farazi</p>
+                <p>Price: $155</p>
+              </div>
+            </div>
+
       </div>
     </div>
   );

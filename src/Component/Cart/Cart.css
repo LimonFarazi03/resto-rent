@@ -35,14 +35,6 @@
   margin-left: 5px;
 }
 
-/* <div className="shop-info">
-          <img src={image} alt="" />
-          <div >
-            <p>Name: Limon Farazi</p>
-            <p>Price: $155</p>
-          </div>
-        </div> */
-
 .products-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
