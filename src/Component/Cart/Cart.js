@@ -28,14 +28,19 @@ const Cart = () => {
       </div>
       <div className="cart-container">
         <h3>This is cart container</h3>
+        {
+          cart.map((item)=>(
+
             <div className="shop-info">
               <img src={cart.strCategoryThumb} alt="" />
               <div >
-                <p>Name: Limon Farazi</p>
+                <p>Name: </p>
                 <p>Price: $155</p>
               </div>
             </div>
 
+          ))
+        }
       </div>
     </div>
   );
