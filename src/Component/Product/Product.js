@@ -3,7 +3,7 @@ import './Product.css';
 import { FaShoppingCart } from 'react-icons/fa';
 
 const Product = (props) => {
-  const {handleAddToCard,product}= props;
+  const {handleAddToCard}= props;
   const {strCategory,strCategoryThumb,price} = props.product;
   return (
     <div className='product'>
@@ -14,7 +14,7 @@ const Product = (props) => {
         <p className='product-name'>{strCategory}</p>
         <p>Price: ${price}</p>
       </div>
-        <button onClick={handleAddToCard} className='order-btn'>
+        <button onClick={ ()=> handleAddToCard(props.product)} className='order-btn'>
           <p className='order-p'>Order Now</p>
           <FaShoppingCart/>
         </button>

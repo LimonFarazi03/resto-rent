@@ -11,8 +11,8 @@ const Cart = () => {
     .then(data => setProducts(data))
   },[]);
 
-  const handleAddToCard = () =>{
-    console.log('iam okay')
+  const handleAddToCard = (product) =>{
+    console.log(product)
   }
 
   return (
